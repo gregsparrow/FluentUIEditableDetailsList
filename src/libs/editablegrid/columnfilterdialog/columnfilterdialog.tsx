@@ -1,5 +1,5 @@
 import { DefaultButton, DialogFooter, Dropdown, IDialogStyleProps, IDialogStyles, IDropdownOption, IDropdownStyles, IStackTokens, ITextFieldStyles, mergeStyleSets, PrimaryButton, Stack, TextField } from "@fluentui/react";
-import { Dialog } from '../Dialog.d';
+import { Dialog } from '../Dialog';
 import React, { useEffect, useState } from "react";
 import { IColumnConfig } from "../../types/columnconfigtype";
 import { IFilter, IOperators, operatorsArr } from "../../types/filterstype";

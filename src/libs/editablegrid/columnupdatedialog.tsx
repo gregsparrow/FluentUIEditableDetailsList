@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { DatePicker, DefaultButton, DialogFooter, Dropdown, IDropdownOption, IDropdownStyles, IStackTokens, ITag, ITextFieldStyles, mergeStyleSets, PrimaryButton, Stack, TextField } from "@fluentui/react";
-import { Dialog } from './Dialog.d';
+import { Dialog } from './Dialog';
 import React, { useEffect, useState } from "react";
 import { IColumnConfig } from "../types/columnconfigtype";
 import { EditControlType } from "../types/editcontroltype";

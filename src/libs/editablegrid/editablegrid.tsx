@@ -14,7 +14,7 @@ import { DetailsListLayoutMode,
 import { MarqueeSelection } from '@fluentui/react/lib/MarqueeSelection';
 import { IconButton } from '@fluentui/react/lib/components/Button/IconButton/IconButton';
 import { PrimaryButton, Panel, PanelType, IStackTokens, Stack, mergeStyleSets, ThemeProvider, Dropdown, IDropdownStyles, IDropdownOption, IButtonStyles, DialogFooter, Announced, SpinButton, DefaultButton, DatePicker, IDatePickerStrings, on, ScrollablePane, ScrollbarVisibility, Sticky, StickyPositionType, IRenderFunction, TooltipHost, mergeStyles, Spinner, SpinnerSize, TagPicker, ITag, IBasePickerSuggestionsProps, IInputProps, HoverCard, HoverCardType, Link } from '@fluentui/react';
-import { Dialog } from './Dialog.d';
+import { Dialog } from './Dialog';
 import { TextField, ITextFieldStyles, ITextField } from '@fluentui/react/lib/TextField';
 import { ContextualMenu, DirectionalHint, IContextualMenu, IContextualMenuProps } from '@fluentui/react/lib/ContextualMenu';
 import { useBoolean } from '@fluentui/react-hooks';

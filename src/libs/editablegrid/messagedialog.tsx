@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { DefaultButton, DialogFooter, mergeStyleSets } from "@fluentui/react";
-import { Dialog } from './Dialog.d';
+import { Dialog } from './Dialog';
 import React, { useEffect } from "react";
 
 interface Props {
