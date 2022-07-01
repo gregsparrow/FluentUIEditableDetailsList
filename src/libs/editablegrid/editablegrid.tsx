@@ -2,21 +2,22 @@
 // Licensed under the MIT License.
 
 import * as React from 'react';
-import { ColumnActionsMode, ConstrainMode, IColumn, IDetailsHeaderProps } from 'office-ui-fabric-react/lib/components/DetailsList/DetailsList.types';
+import { ColumnActionsMode, ConstrainMode, IColumn, IDetailsHeaderProps } from '@fluentui/react/lib/components/DetailsList/DetailsList.types';
 import { useState, useEffect } from 'react';
-import { DetailsList, IDetailsListProps } from 'office-ui-fabric-react/lib/components/DetailsList/DetailsList';
-import { CommandBar, ICommandBarItemProps } from 'office-ui-fabric-react/lib/CommandBar';
+import { DetailsList, IDetailsListProps } from '@fluentui/react/lib/components/DetailsList/DetailsList';
+import { CommandBar, ICommandBarItemProps } from '@fluentui/react/lib/CommandBar';
 import { DetailsListLayoutMode,
     Selection,
     SelectionMode,
     IObjectWithKey,
-    IDetailsColumnRenderTooltipProps, } from 'office-ui-fabric-react/lib/DetailsList';
-import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
-import { IconButton } from 'office-ui-fabric-react/lib/components/Button/IconButton/IconButton';
-import { PrimaryButton, Panel, PanelType, IStackTokens, Stack, mergeStyleSets, Fabric, Dropdown, IDropdownStyles, IDropdownOption, IButtonStyles, DialogFooter, Announced, Dialog, SpinButton, DefaultButton, DatePicker, IDatePickerStrings, on, ScrollablePane, ScrollbarVisibility, Sticky, StickyPositionType, IRenderFunction, TooltipHost, mergeStyles, Spinner, SpinnerSize, TagPicker, ITag, IBasePickerSuggestionsProps, IInputProps, HoverCard, HoverCardType, Link } from 'office-ui-fabric-react';
-import { TextField, ITextFieldStyles, ITextField } from 'office-ui-fabric-react/lib/TextField';
-import { ContextualMenu, DirectionalHint, IContextualMenu, IContextualMenuProps } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { useBoolean } from '@uifabric/react-hooks';
+    IDetailsColumnRenderTooltipProps, } from '@fluentui/react/lib/DetailsList';
+import { MarqueeSelection } from '@fluentui/react/lib/MarqueeSelection';
+import { IconButton } from '@fluentui/react/lib/components/Button/IconButton/IconButton';
+import { PrimaryButton, Panel, PanelType, IStackTokens, Stack, mergeStyleSets, ThemeProvider, Dropdown, IDropdownStyles, IDropdownOption, IButtonStyles, DialogFooter, Announced, SpinButton, DefaultButton, DatePicker, IDatePickerStrings, on, ScrollablePane, ScrollbarVisibility, Sticky, StickyPositionType, IRenderFunction, TooltipHost, mergeStyles, Spinner, SpinnerSize, TagPicker, ITag, IBasePickerSuggestionsProps, IInputProps, HoverCard, HoverCardType, Link } from '@fluentui/react';
+import { Dialog } from './Dialog.d';
+import { TextField, ITextFieldStyles, ITextField } from '@fluentui/react/lib/TextField';
+import { ContextualMenu, DirectionalHint, IContextualMenu, IContextualMenuProps } from '@fluentui/react/lib/ContextualMenu';
+import { useBoolean } from '@fluentui/react-hooks';
 import { IColumnConfig } from '../types/columnconfigtype';
 import { controlClass, dropdownStyles, GetDynamicSpanStyles, textFieldStyles } from './editablegridstyles';
 import { IGridItemsType } from '../types/griditemstype';
@@ -1686,7 +1687,7 @@ const EditableGrid = (props: Props) => {
     /* #endregion */
 
     return (
-        <Fabric>
+        <ThemeProvider>
             <Panel
                 isOpen={isOpenForEdit}
                 onDismiss={dismissPanelForEdit}
@@ -1850,7 +1851,7 @@ const EditableGrid = (props: Props) => {
             :
             null
             }
-        </Fabric>
+        </ThemeProvider>
     );
 };
 

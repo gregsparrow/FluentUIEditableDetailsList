@@ -1,7 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import { DatePicker, DefaultButton, Dialog, DialogFooter, Dropdown, IDropdownOption, IDropdownStyles, IStackTokens, ITag, ITextFieldStyles, mergeStyleSets, PrimaryButton, Stack, TextField } from "office-ui-fabric-react";
+import { DatePicker, DefaultButton, DialogFooter, Dropdown, IDropdownOption, IDropdownStyles, IStackTokens, ITag, ITextFieldStyles, mergeStyleSets, PrimaryButton, Stack, TextField } from "@fluentui/react";
+import { Dialog } from './Dialog.d';
 import React, { useEffect, useState } from "react";
 import { IColumnConfig } from "../types/columnconfigtype";
 import { EditControlType } from "../types/editcontroltype";

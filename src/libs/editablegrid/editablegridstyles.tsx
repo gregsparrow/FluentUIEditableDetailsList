@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import { getTheme, IDetailsColumnStyles, IDropdownStyles, IStackStyles, IStackTokens, ITextFieldStyles, mergeStyleSets } from "office-ui-fabric-react";
+import { getTheme, IDetailsColumnStyles, IDropdownStyles, IStackStyles, IStackTokens, ITextFieldStyles, mergeStyleSets } from "@fluentui/react";
 import { ICellStyleRulesType } from "../types/cellstyleruletype";
 import { IColumnConfig } from "../types/columnconfigtype";
 import { EvaluateRule } from "./helper";

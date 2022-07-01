@@ -1,7 +1,7 @@
 import { IDropdownProps } from "@fluentui/react";
-import { Callout, DirectionalHint, Dropdown, DropdownMenuItemType, IDropdownOption, mergeStyles, ScrollablePane, ScrollbarVisibility, Stack, TextField } from "office-ui-fabric-react";
+import { Callout, DirectionalHint, Dropdown, DropdownMenuItemType, IDropdownOption, mergeStyles, ScrollablePane, ScrollbarVisibility, Stack, TextField } from "@fluentui/react";
 import { dropdownStyles, stackTokens, styles } from "./searchabledropdownstyles";
-import { useId } from '@uifabric/react-hooks';
+import { useId } from '@fluentui/react-hooks';
 import { useEffect } from "react";
 import React from "react";
 

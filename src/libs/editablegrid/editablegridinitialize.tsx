@@ -1,12 +1,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import { IColumn, ICommandBarItemProps, IconButton, TextField } from "office-ui-fabric-react";
+import { IColumn, ICommandBarItemProps, IconButton, TextField } from "@fluentui/react";
 import React from "react";
 import { IColumnConfig } from "../types/columnconfigtype";
 import { Operation } from "../types/operation";
 import { controlClass, textFieldStyles } from "./editablegridstyles";
-import { initializeIcons } from 'office-ui-fabric-react';
+import { initializeIcons } from '@fluentui/react';
 import { EditControlType } from "../types/editcontroltype";
 
 initializeIcons(/* optional base url */);

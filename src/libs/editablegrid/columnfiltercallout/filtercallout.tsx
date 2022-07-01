@@ -1,6 +1,6 @@
-import { Callout, DirectionalHint } from "office-ui-fabric-react";
+import { Callout, DirectionalHint } from "@fluentui/react";
 import React from "react";
-import { useId } from '@uifabric/react-hooks';
+import { useId } from '@fluentui/react-hooks';
 import { styles } from "./filtercalloutstyles";
 import FilterList from "./filterlist";
 import { IFilterCalloutProps } from "../../types/columnfilterstype";

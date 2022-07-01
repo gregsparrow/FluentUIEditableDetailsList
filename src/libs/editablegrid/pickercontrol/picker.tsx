@@ -1,4 +1,4 @@
-import { HoverCard, HoverCardType, IBasePickerSuggestionsProps, IInputProps, IPlainCardProps, ISuggestionItemProps, ITag, TagPicker } from "office-ui-fabric-react"
+import { HoverCard, HoverCardType, IBasePickerSuggestionsProps, IInputProps, IPlainCardProps, ISuggestionItemProps, ITag, TagPicker } from "@fluentui/react"
 import React, { MouseEventHandler } from "react";
 import { useEffect } from "react";
 import { StringOperators } from "../../types/cellstyleruletype";

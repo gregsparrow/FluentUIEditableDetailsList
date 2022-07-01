@@ -1,7 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import { DefaultButton, Dialog, DialogFooter, mergeStyleSets } from "office-ui-fabric-react";
+import { DefaultButton, DialogFooter, mergeStyleSets } from "@fluentui/react";
+import { Dialog } from './Dialog.d';
 import React, { useEffect } from "react";
 
 interface Props {

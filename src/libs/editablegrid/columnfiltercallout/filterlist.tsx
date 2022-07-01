@@ -1,4 +1,4 @@
-import { ActionButton, Checkbox, DefaultButton, Dropdown, mergeStyles, PrimaryButton, ScrollablePane, ScrollbarVisibility, Stack, TextField } from "office-ui-fabric-react";
+import { ActionButton, Checkbox, DefaultButton, Dropdown, mergeStyles, PrimaryButton, ScrollablePane, ScrollbarVisibility, Stack, TextField } from "@fluentui/react";
 import React, { useEffect, useState } from "react";
 import { IFilterCalloutProps, IFilterItem, IFilterListItem, IFilterListProps } from "../../types/columnfilterstype";
 import { styles, stackTokens } from "./filterliststyles";

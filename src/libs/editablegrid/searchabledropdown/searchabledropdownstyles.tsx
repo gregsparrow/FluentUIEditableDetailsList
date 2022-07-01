@@ -1,4 +1,4 @@
-import { IDropdownStyles, IStackTokens, mergeStyleSets } from "office-ui-fabric-react";
+import { IDropdownStyles, IStackTokens, mergeStyleSets } from "@fluentui/react";
 
 export const dropdownStyles: Partial<IDropdownStyles> = {
     dropdown: { width: '90%', margin:10 },

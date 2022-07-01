@@ -1,4 +1,4 @@
-import { IStackTokens, mergeStyleSets } from "office-ui-fabric-react";
+import { IStackTokens, mergeStyleSets } from "@fluentui/react";
 
 export const stackTokens: IStackTokens = { childrenGap: 20, maxWidth:1000 };
 

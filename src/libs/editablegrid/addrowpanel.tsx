@@ -1,4 +1,4 @@
-import { ConstrainMode, DatePicker, Dropdown, IDropdownOption, IStackStyles, IStackTokens, ITag, ITextFieldStyles, mergeStyleSets, Position, PrimaryButton, SpinButton, Stack, TextField } from "office-ui-fabric-react";
+import { ConstrainMode, DatePicker, Dropdown, IDropdownOption, IStackStyles, IStackTokens, ITag, ITextFieldStyles, mergeStyleSets, Position, PrimaryButton, SpinButton, Stack, TextField } from "@fluentui/react";
 import React, { useEffect, useState } from "react";
 import { IColumnConfig } from "../types/columnconfigtype";
 import { EditControlType } from "../types/editcontroltype";

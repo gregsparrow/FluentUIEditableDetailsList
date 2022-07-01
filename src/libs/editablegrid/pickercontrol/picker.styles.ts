@@ -1,4 +1,4 @@
-import { mergeStyleSets } from "office-ui-fabric-react";
+import { mergeStyleSets } from "@fluentui/react";
 
 export const classNames = mergeStyleSets({
     plainCard: {
