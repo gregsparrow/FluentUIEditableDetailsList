@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import { Checkbox, DefaultButton, DetailsList, DetailsListLayoutMode, DirectionalHint, Fabric, FontIcon, IButtonProps, IStackTokens, Link, mergeStyles, mergeStyleSets, SelectionMode, Stack, TeachingBubble, TextField } from 'office-ui-fabric-react';
+import { Checkbox, DefaultButton, DetailsList, DetailsListLayoutMode, DirectionalHint, Fabric, FontIcon, IButtonProps, IStackTokens, Link, mergeStyles, mergeStyleSets, SelectionMode, Stack, TeachingBubble, TextField } from '@fluentui/react';
 import * as React from 'react';
 import { useState } from 'react';
 import EditableGrid from '../../libs/editablegrid/editablegrid';

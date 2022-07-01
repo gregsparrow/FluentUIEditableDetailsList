@@ -1,4 +1,4 @@
-import { ScrollablePane, ScrollbarVisibility } from "office-ui-fabric-react";
+import { ScrollablePane, ScrollbarVisibility } from "@fluentui/react";
 import React, { useEffect } from "react";
 import { FC } from "react";
 import { ICellHoverProps } from "../../libs/types/cellhoverpropstype";

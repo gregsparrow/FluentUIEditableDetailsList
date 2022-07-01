@@ -1,4 +1,4 @@
-import { ITeachingBubbleProps } from "office-ui-fabric-react";
+import { ITeachingBubbleProps } from "@fluentui/react";
 
 export interface ITeachingBubblePropsExtended extends ITeachingBubbleProps{
     innerText: string;
