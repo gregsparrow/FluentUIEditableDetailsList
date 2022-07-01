@@ -82,7 +82,7 @@ import { DetailsListLayoutMode, Selection, } from '@fluentui/react/lib/DetailsLi
 import { MarqueeSelection } from '@fluentui/react/lib/MarqueeSelection';
 import { IconButton } from '@fluentui/react/lib/components/Button/IconButton/IconButton';
 import { PrimaryButton, Panel, PanelType, ThemeProvider, Dropdown, DialogFooter, Announced, SpinButton, DatePicker, ScrollablePane, ScrollbarVisibility, Sticky, StickyPositionType, TooltipHost, mergeStyles, Spinner, SpinnerSize, TagPicker, HoverCard, HoverCardType, Link } from '@fluentui/react';
-import { Dialog } from './Dialog.d';
+import { Dialog } from './Dialog';
 import { TextField } from '@fluentui/react/lib/TextField';
 import { controlClass, dropdownStyles, GetDynamicSpanStyles, textFieldStyles } from './editablegridstyles';
 import { Operation } from '../types/operation';

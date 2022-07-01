@@ -27,7 +27,7 @@ var __read = (this && this.__read) || function (o, n) {
 };
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { DefaultButton, DialogFooter, Dropdown, PrimaryButton, Stack, TextField } from "@fluentui/react";
-import { Dialog } from '../Dialog.d';
+import { Dialog } from '../Dialog';
 import React, { useEffect, useState } from "react";
 import { operatorsArr } from "../../types/filterstype";
 import { controlClass, dropdownStyles, modelProps, stackTokens, textFieldStyles } from "./columnfilterdialogStyles";

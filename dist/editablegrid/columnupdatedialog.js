@@ -29,7 +29,7 @@ import { Fragment as _Fragment, jsx as _jsx, jsxs as _jsxs } from "react/jsx-run
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 import { DatePicker, DefaultButton, DialogFooter, Dropdown, mergeStyleSets, PrimaryButton, Stack, TextField } from "@fluentui/react";
-import { Dialog } from './Dialog.d';
+import { Dialog } from './Dialog';
 import React, { useEffect, useState } from "react";
 import { EditControlType } from "../types/editcontroltype";
 import { DayPickerStrings } from "./datepickerconfig";

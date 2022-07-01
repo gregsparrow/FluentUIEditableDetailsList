@@ -29,7 +29,7 @@ import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-run
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 import { DefaultButton, DialogFooter, mergeStyleSets } from "@fluentui/react";
-import { Dialog } from './Dialog.d';
+import { Dialog } from './Dialog';
 import React, { useEffect } from "react";
 var MessageDialog = function (props) {
     var _a = __read(React.useState(undefined), 2), messageDialogContent = _a[0], setMessageDialogContent = _a[1];
