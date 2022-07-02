@@ -74,16 +74,16 @@ import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-run
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 import * as React from 'react';
-import { ConstrainMode } from '@fluentui/react/lib/components/DetailsList/DetailsList.types';
+import { ConstrainMode } from '@fluentui/react';
 import { useState, useEffect } from 'react';
-import { DetailsList } from '@fluentui/react/lib/components/DetailsList/DetailsList';
-import { CommandBar } from '@fluentui/react/lib/CommandBar';
-import { DetailsListLayoutMode, Selection, } from '@fluentui/react/lib/DetailsList';
-import { MarqueeSelection } from '@fluentui/react/lib/MarqueeSelection';
-import { IconButton } from '@fluentui/react/lib/components/Button/IconButton/IconButton';
+import { DetailsList } from '@fluentui/react';
+import { CommandBar } from '@fluentui/react';
+import { DetailsListLayoutMode, Selection, } from '@fluentui/react';
+import { MarqueeSelection } from '@fluentui/react';
+import { IconButton } from '@fluentui/react';
 import { PrimaryButton, Panel, PanelType, ThemeProvider, Dropdown, DialogFooter, Announced, SpinButton, DatePicker, ScrollablePane, ScrollbarVisibility, Sticky, StickyPositionType, TooltipHost, mergeStyles, Spinner, SpinnerSize, TagPicker, HoverCard, HoverCardType, Link } from '@fluentui/react';
 import { Dialog } from './Dialog';
-import { TextField } from '@fluentui/react/lib/TextField';
+import { TextField } from '@fluentui/react';
 import { controlClass, dropdownStyles, GetDynamicSpanStyles, textFieldStyles } from './editablegridstyles';
 import { Operation } from '../types/operation';
 import { InitializeInternalGrid, InitializeInternalGridEditStructure, ResetGridRowID, ShallowCopyDefaultGridToEditGrid, ShallowCopyEditGridToDefaultGrid } from './editablegridinitialize';
