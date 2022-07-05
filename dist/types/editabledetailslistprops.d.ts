@@ -1,5 +1,4 @@
-import { ConstrainMode } from "@fluentui/react/lib/components/DetailsList";
-import { IDetailsListProps } from "@fluentui/react/lib/components/DetailsList/DetailsList";
+import { ConstrainMode, IDetailsListProps } from "@fluentui/react";
 import { IColumnConfig } from "./columnconfigtype";
 import { IGridCopy } from "./gridcopytype";
 import { IRowAddWithValues } from "./rowaddtype";

@@ -1,8 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import { ConstrainMode, IColumn, IDetailsHeaderProps } from '@fluentui/react/lib/components/DetailsList/DetailsList.types';
-import { IDropdownOption } from "@fluentui/react";
+import { ConstrainMode, IColumn, IDetailsHeaderProps, IDropdownOption } from '@fluentui/react';
 import { CalculationType } from "./calculationtype";
 import { ICellStyleRulesType, StringOperators } from './cellstyleruletype';
 import { EditControlType } from "./editcontroltype";

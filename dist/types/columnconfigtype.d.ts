@@ -1,6 +1,5 @@
 /// <reference types="react" />
-import { IColumn } from '@fluentui/react/lib/components/DetailsList/DetailsList.types';
-import { IDropdownOption } from "@fluentui/react";
+import { IColumn, IDropdownOption } from '@fluentui/react';
 import { CalculationType } from "./calculationtype";
 import { ICellStyleRulesType, StringOperators } from './cellstyleruletype';
 import { EditControlType } from "./editcontroltype";
