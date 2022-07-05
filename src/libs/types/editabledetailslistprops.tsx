@@ -1,4 +1,4 @@
-import { ConstrainMode, IDetailsListProps } from "@fluentui/react";
+import { ConstrainMode, IDetailsListProps, ICommandBarItemProps } from "@fluentui/react";
 import { IColumnConfig } from "./columnconfigtype";
 import { IGridCopy } from "./gridcopytype";
 import { IRowAddWithValues } from "./rowaddtype";
@@ -6,6 +6,7 @@ import { IRowAddWithValues } from "./rowaddtype";
 export interface Props extends IDetailsListProps {
     id: number;
     items: any[];
+    commandBarItems?: ICommandBarItemProps[],
     columns: IColumnConfig[];
     enableExport?: boolean;
     exportFileName?: string;
