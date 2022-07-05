@@ -1356,8 +1356,11 @@ const EditableGrid = (props: Props) => {
     };
 
     const CreateCommandBarItemProps = (): ICommandBarItemProps[] => {
-        let commandBarItems: ICommandBarItemProps[] = props.commandBarItems ?? [];
+        let commandBarItems: ICommandBarItemProps[] = [];
 
+        props.commandBarItems?.forEach(element => {
+            commandBarItems.push(element);
+        });
 
         if (props.enableExport) {
             commandBarItems.push({

@@ -1110,7 +1110,10 @@ var EditableGrid = function (props) {
     };
     var CreateCommandBarItemProps = function () {
         var _a;
-        var commandBarItems = (_a = props.commandBarItems) !== null && _a !== void 0 ? _a : [];
+        var commandBarItems = [];
+        (_a = props.commandBarItems) === null || _a === void 0 ? void 0 : _a.forEach(function (element) {
+            commandBarItems.push(element);
+        });
         if (props.enableExport) {
             commandBarItems.push({
                 id: 'export',
