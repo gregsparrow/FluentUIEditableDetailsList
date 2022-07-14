@@ -39,10 +39,10 @@ var PickerControl = function (props) {
     var _d = __read(React.useState([]), 2), pickerDescriptions = _d[0], setPickerDescriptions = _d[1];
     var _e = __read(React.useState(''), 2), pickerFilteredText = _e[0], setPickerFilteredText = _e[1];
     useEffect(function () {
-        var _a, _b;
+        var _a;
         if (props.pickerTags && props.pickerTags.length > 0) {
-            setPickerTags(props.pickerTags.map(function (item) { return ({ key: item, name: item }); }));
-            setdefaultTags((_b = (_a = props === null || props === void 0 ? void 0 : props.defaultTags) === null || _a === void 0 ? void 0 : _a.map(function (item) { return ({ key: item, name: item }); })) !== null && _b !== void 0 ? _b : []);
+            setPickerTags(props.pickerTags);
+            setdefaultTags((_a = props === null || props === void 0 ? void 0 : props.defaultTags) !== null && _a !== void 0 ? _a : []);
         }
     }, [props.pickerTags]);
     useEffect(function () {

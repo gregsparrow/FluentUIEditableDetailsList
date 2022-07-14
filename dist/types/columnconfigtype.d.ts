@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { IColumn, IDropdownOption } from '@fluentui/react';
+import { IColumn, IDropdownOption, ITag } from '@fluentui/react';
 import { CalculationType } from "./calculationtype";
 import { ICellStyleRulesType, StringOperators } from './cellstyleruletype';
 import { EditControlType } from "./editcontroltype";
@@ -38,7 +38,7 @@ export interface IHoverOptions {
 export interface IPickerOptions {
     tagsLimit?: number;
     minCharLimitForSuggestions?: number;
-    pickerTags: string[];
+    pickerTags: ITag[];
     pickerDescriptionOptions?: IPickerDescriptionOption;
     suggestionsRule?: StringOperators;
 }

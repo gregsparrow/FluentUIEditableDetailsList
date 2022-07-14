@@ -9,8 +9,8 @@ import { classNames } from "./picker.styles";
 interface Props {
     arialabel?: string;
     selectedItemsLimit? : number;
-    pickerTags : string[];
-    defaultTags?: string[];
+    pickerTags : ITag[];
+    defaultTags?: ITag[];
     minCharLimitForSuggestions?: number;
     onTaglistChanged?: any;
     pickerDescriptionOptions?: IPickerDescriptionOption;
@@ -26,8 +26,8 @@ const PickerControl = (props: Props) => {
     
     useEffect(() => {
         if(props.pickerTags && props.pickerTags.length > 0){
-            setPickerTags(props.pickerTags.map(item => ({ key: item, name: item })));
-            setdefaultTags(props?.defaultTags?.map(item => ({ key: item, name: item })) ?? []);
+            setPickerTags(props.pickerTags);
+            setdefaultTags(props?.defaultTags ?? []);
         }
     }, [props.pickerTags]);
 

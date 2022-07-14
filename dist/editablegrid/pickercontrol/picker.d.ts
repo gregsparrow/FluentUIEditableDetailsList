@@ -1,11 +1,12 @@
 /// <reference types="react" />
+import { ITag } from "@fluentui/react";
 import { StringOperators } from "../../types/cellstyleruletype";
 import { IPickerDescriptionOption } from "../../types/columnconfigtype";
 interface Props {
     arialabel?: string;
     selectedItemsLimit?: number;
-    pickerTags: string[];
-    defaultTags?: string[];
+    pickerTags: ITag[];
+    defaultTags?: ITag[];
     minCharLimitForSuggestions?: number;
     onTaglistChanged?: any;
     pickerDescriptionOptions?: IPickerDescriptionOption;
