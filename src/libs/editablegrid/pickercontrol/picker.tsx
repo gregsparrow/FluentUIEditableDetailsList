@@ -10,7 +10,7 @@ interface Props {
     arialabel?: string;
     selectedItemsLimit? : number;
     pickerTags : ITag[];
-    defaultTags?: ITag[];
+    defaultTags?: string[];
     minCharLimitForSuggestions?: number;
     onTaglistChanged?: any;
     pickerDescriptionOptions?: IPickerDescriptionOption;
@@ -27,7 +27,10 @@ const PickerControl = (props: Props) => {
     useEffect(() => {
         if(props.pickerTags && props.pickerTags.length > 0){
             setPickerTags(props.pickerTags);
-            setdefaultTags(props?.defaultTags ?? []);
+            setdefaultTags(props?.defaultTags?.map(item => {
+                let tag = props.pickerTags.find(tag => tag.key == item);
+                return { key: item, name: tag?.name ?? '' }
+            }) ?? []);
         }
     }, [props.pickerTags]);
 
