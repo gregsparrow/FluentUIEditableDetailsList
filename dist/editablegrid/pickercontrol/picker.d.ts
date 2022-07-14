@@ -6,7 +6,7 @@ interface Props {
     arialabel?: string;
     selectedItemsLimit?: number;
     pickerTags: ITag[];
-    defaultTags?: ITag[];
+    defaultTags?: string[];
     minCharLimitForSuggestions?: number;
     onTaglistChanged?: any;
     pickerDescriptionOptions?: IPickerDescriptionOption;

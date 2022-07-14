@@ -39,10 +39,14 @@ var PickerControl = function (props) {
     var _d = __read(React.useState([]), 2), pickerDescriptions = _d[0], setPickerDescriptions = _d[1];
     var _e = __read(React.useState(''), 2), pickerFilteredText = _e[0], setPickerFilteredText = _e[1];
     useEffect(function () {
-        var _a;
+        var _a, _b;
         if (props.pickerTags && props.pickerTags.length > 0) {
             setPickerTags(props.pickerTags);
-            setdefaultTags((_a = props === null || props === void 0 ? void 0 : props.defaultTags) !== null && _a !== void 0 ? _a : []);
+            setdefaultTags((_b = (_a = props === null || props === void 0 ? void 0 : props.defaultTags) === null || _a === void 0 ? void 0 : _a.map(function (item) {
+                var _a;
+                var tag = props.pickerTags.find(function (tag) { return tag.key == item; });
+                return { key: item, name: (_a = tag === null || tag === void 0 ? void 0 : tag.name) !== null && _a !== void 0 ? _a : '' };
+            })) !== null && _b !== void 0 ? _b : []);
         }
     }, [props.pickerTags]);
     useEffect(function () {
