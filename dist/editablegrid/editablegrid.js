@@ -575,7 +575,7 @@ var EditableGrid = function (props) {
                 item.properties[column.key].value = '';
                 if (cellPickerTagList && cellPickerTagList.length > 0) {
                     cellPickerTagList.forEach(function (tag) {
-                        item.properties[column.key].value += tag.name + ';';
+                        item.properties[column.key].value += tag.key + ';';
                     });
                 }
                 var str = item.properties[column.key].value;

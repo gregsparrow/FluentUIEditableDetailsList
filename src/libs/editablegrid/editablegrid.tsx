@@ -609,7 +609,7 @@ const EditableGrid = (props: Props) => {
                 item.properties[column.key].value = '';
                 if (cellPickerTagList && cellPickerTagList.length > 0) {
                     cellPickerTagList!.forEach((tag) => {
-                        item.properties[column.key].value += tag.name + ';';
+                        item.properties[column.key].value += tag.key + ';';
                     });
                 }
 

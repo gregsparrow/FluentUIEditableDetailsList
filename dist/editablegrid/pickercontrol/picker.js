@@ -42,11 +42,7 @@ var PickerControl = function (props) {
         var _a, _b;
         if (props.pickerTags && props.pickerTags.length > 0) {
             setPickerTags(props.pickerTags);
-            setdefaultTags((_b = (_a = props === null || props === void 0 ? void 0 : props.defaultTags) === null || _a === void 0 ? void 0 : _a.map(function (item) {
-                var _a;
-                var tag = props.pickerTags.find(function (tag) { return tag.key == item; });
-                return { key: item, name: (_a = tag === null || tag === void 0 ? void 0 : tag.name) !== null && _a !== void 0 ? _a : '' };
-            })) !== null && _b !== void 0 ? _b : []);
+            setdefaultTags((_b = (_a = props === null || props === void 0 ? void 0 : props.defaultTags) === null || _a === void 0 ? void 0 : _a.map(function (item) { var _a; return ((_a = props.pickerTags.find(function (tag) { return tag.key == item; })) !== null && _a !== void 0 ? _a : { key: '', name: '' }); })) !== null && _b !== void 0 ? _b : []);
         }
     }, [props.pickerTags]);
     useEffect(function () {
