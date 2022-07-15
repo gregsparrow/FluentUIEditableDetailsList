@@ -521,6 +521,9 @@ const EditableGrid = (props: Props) => {
             let activateCellEditTmp: any[] = [];
             activateCellEditTmp = [...activateCellEdit];
             activateCellEditTmp[row]['properties'][key]['error'] = `Value not '${column.dataType}'`;
+            if (column.onChange) {
+                HandleColumnOnChange(activateCellEditTmp, row, column);
+            }
             setActivateCellEdit(activateCellEditTmp);
             return;
         }

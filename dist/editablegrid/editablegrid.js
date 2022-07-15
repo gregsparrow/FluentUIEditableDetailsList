@@ -505,6 +505,9 @@ var EditableGrid = function (props) {
             var activateCellEditTmp_1 = [];
             activateCellEditTmp_1 = __spreadArray([], __read(activateCellEdit), false);
             activateCellEditTmp_1[row]['properties'][key]['error'] = "Value not '".concat(column.dataType, "'");
+            if (column.onChange) {
+                HandleColumnOnChange(activateCellEditTmp_1, row, column);
+            }
             setActivateCellEdit(activateCellEditTmp_1);
             return;
         }
