@@ -65,8 +65,8 @@ export var applyGridColumnFilter = function (data, gridColumnFilterArr) {
 export var isColumnDataTypeSupportedForFilter = function (datatype) {
     switch (datatype) {
         case 'number':
+            return true;
         case 'string':
-        case '###.##':
             return true;
         default:
             return false;
@@ -76,10 +76,7 @@ export var IsValidDataType = function (type, text) {
     var isValid = true;
     switch (type) {
         case 'number':
-            isValid = !isNaN(Number(text));
-            break;
-        case '###.##':
-            isValid = /[\.]/.test(String(text));
+            isValid = !isNaN(Number(text)) && isFinite(Number(text)) && !/e/i.test(text);
             break;
     }
     return isValid;
