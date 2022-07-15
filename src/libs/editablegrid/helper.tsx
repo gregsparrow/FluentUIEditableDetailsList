@@ -62,7 +62,8 @@ export const IsValidDataType = (type : string | undefined, text : string) : bool
     var isValid = true;
     switch(type) {
         case 'number':
-            isValid = !isNaN(Number(text)) && isFinite(Number(text)) && !/e/i.test(text);
+            text = String(text);
+            isValid = !isNaN(+text) && isFinite(+text) && !/e/i.test(text);
             break;
     }
 
