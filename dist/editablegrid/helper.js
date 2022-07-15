@@ -76,8 +76,8 @@ export var IsValidDataType = function (type, text) {
     var isValid = true;
     switch (type) {
         case 'number':
-            text = String(text);
-            isValid = !isNaN(+text) && isFinite(+text) && !/e/i.test(text);
+            var s = String(text);
+            isValid = !isNaN(+s) && isFinite(+s) && !/e/i.test(s);
             break;
     }
     return isValid;
